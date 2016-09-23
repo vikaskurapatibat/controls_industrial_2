@@ -1,0 +1,49 @@
+\documentclass[11pt, a4paper]{article}
+\usepackage[affil-it]{authblk} 
+\usepackage{etoolbox}
+\usepackage{lmodern}
+\usepackage{titlesec}
+\usepackage{float}
+\makeatletter
+\patchcmd{\@maketitle}{\LARGE \@title}{\fontsize{20}{19.2}\selectfont\@title}{}{}
+\makeatother
+
+\renewcommand\Authfont{\fontsize{16}{14.4}\selectfont}
+\renewcommand\Affilfont{\fontsize{12}{10.8}\itshape}
+
+\title{\textbf{Industrial Emulator}} 
+\author{Group 12}
+\usepackage{graphicx}
+\begin{document}
+\maketitle
+\newpage
+\tableofcontents
+\newpage
+\section{Objective}
+\section{Introduction to Industrial Emulator}
+\subsection{Why called 'Industrial Emulator'?}
+\subsection{System Overview}
+\subsection{Hardware System}
+\subsection{Do's and Dont's}
+\subsection{Demonstration of ECP software program}
+\section{Experiment 1- System Identification}
+\subsection{Gain Measurement}
+\subsection{Inertia Measurement}
+\section{Experiment 2- Rigid body PD and PID control}
+\subsection{Effect of $k_p$ and $k_d$ independently}
+\subsection{PD control design}
+\subsection{Adding Integral Action}
+\subsection{Tracking Response}
+\subsection{Frequency Response}
+\section{Experiment 3- Fundamentals of Servo Control}
+\subsection{Effect of Gear Ratio and Inertia}
+\subsection{Effect of Friction}
+\subsection{Effect of Disturbances}
+\subsection{Effect of Drive Saturation}
+\subsection{Effect of Discrete Time sampling}
+\section{Experiment 4- Control of Plant with Drive Flexibility}
+\subsection{Collocated Control}
+\section{Experiment 5- Control of Plant with Backlash}
+\subsection{Effects of Conventionally controlled system}
+
+\end{document}
